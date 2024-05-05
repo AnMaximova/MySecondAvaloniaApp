@@ -1,0 +1,138 @@
+
+	<Window xmlns="https://github.com/avaloniaui"
+			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			mc:Ignorable="d"
+			Width="1200"
+			Height="700"
+			x:Class="MySecondAvaloniaApp.MainWindow"
+			Title="MySecondAvaloniaApp - Alpaca By Animals Network Team"
+			CanResize="False">
+
+		<Window.Styles>
+			<Style Selector="TextBlock">
+				<Setter Property="Margin" Value="5"></Setter>
+				<Setter Property="Foreground" Value="#FBEEC1"></Setter>
+				<Setter Property="FontWeight" Value="Medium"></Setter>
+			</Style>
+			<Style Selector="DockPanel TextBlock">
+				<Setter Property="Margin" Value="10"></Setter>
+			</Style>
+			<Style Selector="Image">
+				<Setter Property="Margin" Value="25"></Setter>
+			</Style>
+		</Window.Styles>
+
+		<Grid ShowGridLines="False"
+			  RowDefinitions="auto,*"
+			  ColumnDefinitions="900,*"
+			  Background="#0F0F2D">
+
+			<DockPanel Grid.Row="0"
+					   Grid.ColumnSpan="2"
+					   Background = "#8D8741">
+				<TextBlock>Home</TextBlock>
+				<TextBlock>About</TextBlock>
+				<TextBlock>Blog's Main Topic 1</TextBlock>
+				<TextBlock>Blog's Main Topic 2</TextBlock>
+				<TextBlock>Blog's Main Topic 3</TextBlock>
+				<TextBlock>Associated blogs</TextBlock>
+				<TextBlock DockPanel.Dock="Right" TextAlignment="Right">RSS</TextBlock>
+			</DockPanel>
+
+			<StackPanel Grid.Row="1"
+						Orientation="Vertical"
+						Background="#FBEEC1">
+				<TextBlock TextWrapping="Wrap" Foreground ="#BC986A">
+					The Alpaca is a domestic hoofed mammal that originated in South America.
+					Its closest relatives are the domestic llama, the wild vicuna, and guanaco.
+					Researchers believe that humans bred these modern day animals from vicunas.
+				</TextBlock>
+				<TextBlock TextWrapping="Wrap" Foreground ="#BC986A">
+					Alpacas and llamas look quite similar, but Alpacas are significantly smaller than llamas. 
+					There are just two breeds of Alpaca: the Huacaya and the Suri. Read on to learn about the Alpaca.
+					These fluffy animals stand about 3.5 ft. tall at the shoulder.
+					They are relatively small compared to the other members of their family, and weigh about 130 lbs. on average. 
+					They have long legs, long necks, and long ears.
+					Their fur is long and dense, and varies in color from white to black, and many different shades of brown or tan. 
+					Some Alpacas have solid colored coats, while others have spots or patches of different color.
+				</TextBlock>
+				<TextBlock TextWrapping="Wrap">
+					Interesting Facts About the Alpaca:
+					These are furry, charismatic animals that humans breed in many different parts of the world. 
+					Learn more about what makes them unique below.
+				</TextBlock>	
+					<TextBlock TextWrapping="Wrap" Foreground ="#659DBD">
+					* Camelidae – Just like llamas, vicunas, and guanacos, Alpacas are members of the Camelidae family. 
+					Within the camel family, humans have domesticated 4 of the 7 different species. 
+					Of the domestic Camelids, which also include the Bactrian camel, Dromedary camel, and llama, the Alpaca is the smallest.
+				</TextBlock>
+					<TextBlock TextWrapping="Wrap" Foreground ="#8D8741">
+					* Closest Relatives – Within the family, this animal is genetically quite similar to the llama. 
+					In fact, they are so closely related that they can interbreed. A hybrid between a llama and an Alpaca is a “huarizo.” 
+					Just like mules, which are hybrids of horses and donkeys, Huarizos usually cannot reproduce.
+				</TextBlock>
+					<TextBlock TextWrapping="Wrap" Foreground ="#BC986A">
+					* Spitting – Like llamas, Alpacas can “spit” if they feel threatened. 
+					However, this spit is not actually saliva, but a sticky glob of whatever happens to be in their stomach at the time. 
+					It is never a good idea to agitate one of these animals, but don’t think distance will keep you safe! 
+					Their spitting radius is about 10 feet!
+				</TextBlock>
+					<TextBlock TextWrapping="Wrap" Foreground ="#659DBD">
+					* Fangs – Spitting isn’t this mammal’s only defense. Males also grow elongated canine teeth. 
+					They use these teeth, or fangs, when fighting one another or fighting predators. Most fangs are a little over an inch long.
+				</TextBlock>
+				<Image Source="C:\My files\AOP\9 grade\MySecondAvaloniaApp\alpaca.jpg" 
+						 Height="170"
+						 Width="170"
+						 Stretch="Uniform"
+						 HorizontalAlignment="Center">				
+				</Image>	  
+				<DockPanel 
+				     Background="#8D8741">
+					<TextBlock DockPanel.Dock="Left">Tags:</TextBlock>
+					<TextBlock DockPanel.Dock="Left"> Tag1 </TextBlock>
+					<TextBlock DockPanel.Dock="Left"> Tag2 </TextBlock>
+					<TextBlock DockPanel.Dock="Left"> Tag3 </TextBlock>
+					<TextBlock DockPanel.Dock="Left"> Tag4 </TextBlock>
+					<TextBlock DockPanel.Dock="Right" TextAlignment="Right">Rate this aticle   "4/5"</TextBlock>
+				</DockPanel>
+			</StackPanel>
+
+
+			<StackPanel Grid.Row="1"
+						Grid.Column="1"
+						Background ="#BC986A">		
+						<TextBlock TextWrapping="Wrap">
+							From what I researched goats or sheep are better to keep lawns trimmed.
+							Alpacas can have some finicky health problems and are happier in herds.
+							They can get costly to maintain if you aren't planning on selling wool or breeding.
+							If you are okay giving them their worm shots yourself you can save money
+							but there is a little bit more maintenance with alpacas then goats or sheep.
+							Also need to sheer them down every year or two but sheep will have the same task.
+							If you ever plan on getting goats don't pen them with alpacas.
+						</TextBlock>
+				
+						<TextBlock TextAlignment="Right"  TextDecorations="Underline" Foreground = "#659DBD"
+								   Margin="0,0,15,10">More</TextBlock>
+				
+						<TextBlock TextAlignment="Right"
+								   Margin="0,0,15,10">Yesterday</TextBlock>
+				
+						<TextBlock TextWrapping="WrapWithOverflow">
+							Alpacas wouldn’t be my first suggestion for your situation, 
+							as there are some lower-maintenance/cost livestock out there. 
+							However, for a beginner, they are pretty easygoing temperament wise (from those i’ve been around) 
+							and if you get one from a good owner/breeder, you could certainly have them live up to your expectations! 
+							best of luck to you!
+						</TextBlock>
+						
+						<TextBlock TextAlignment="Right" TextDecorations="Underline" Foreground = "#659DBD"
+								   Margin="0,0,15,10">More</TextBlock>
+						<TextBlock TextAlignment="Right"
+								   Margin="0,0,15,10">1 week ago</TextBlock>
+			</StackPanel>
+		</Grid>
+	</Window>
+
